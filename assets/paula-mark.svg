@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Paula</title>
+  <defs>
+    <linearGradient id="pg" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1ba88e"/>
+      <stop offset="1" stop-color="#2a6b9c"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#pg)"/>
+  <!-- receptionist: head, shoulders, headset with mic -->
+  <circle cx="32" cy="27" r="9.5" fill="#ffffff"/>
+  <path d="M15.5 52 C15.5 41.5 23 37.5 32 37.5 C41 37.5 48.5 41.5 48.5 52 Z" fill="#ffffff"/>
+  <path d="M20.5 27 a11.5 11.5 0 0 1 23 0" fill="none" stroke="#ffffff" stroke-width="3.4" stroke-linecap="round"/>
+  <rect x="17.6" y="24.4" width="5.4" height="9" rx="2.7" fill="#ffffff"/>
+  <rect x="41" y="24.4" width="5.4" height="9" rx="2.7" fill="#ffffff"/>
+  <path d="M43.7 33.4 C43.7 38 39.5 40 35.6 40" fill="none" stroke="#ffffff" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="34.2" cy="40" r="2.6" fill="#ffffff"/>
+</svg>

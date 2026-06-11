@@ -1,0 +1,8 @@
+{
+  "name": "paula-ai-receptionist",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/audit-site.mjs"
+  }
+}

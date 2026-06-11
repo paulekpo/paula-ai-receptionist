@@ -1,0 +1,673 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Paula answers missed and after-hours calls, qualifies leads by voice and SMS, and hands ready-to-call opportunities to your team."
+    />
+    <meta name="theme-color" content="#f8f7f4" />
+    <meta property="og:title" content="Paula AI Receptionist | Every missed call gets a response" />
+    <meta
+      property="og:description"
+      content="A done-for-you AI phone safety net for service businesses. Try it free for 30 days, then continue for $299/month."
+    />
+    <meta property="og:type" content="website" />
+    <title>Paula AI Receptionist | Turn Missed Calls Into Conversations</title>
+    <link rel="icon" href="assets/paula-mark.svg?v=4" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Schibsted+Grotesk:ital,wght@0,400..700;1,400..700&family=Spline+Sans+Mono:wght@400..600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // apply saved theme before first paint to avoid a flash
+      try {
+        const saved = localStorage.getItem("paula-theme");
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.dataset.theme = saved;
+        }
+      } catch (e) {}
+    </script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-flow" aria-hidden="true">
+      <span class="flow-blob flow-a"><i></i></span>
+      <span class="flow-blob flow-b"><i></i></span>
+      <span class="flow-blob flow-c"><i></i></span>
+    </div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="Paula home">
+          <img src="assets/paula-mark.svg?v=4" alt="" width="34" height="34" />
+          <span>Paula</span>
+        </a>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#how-it-works">How it works</a>
+          <a href="#calculator">Calculator</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a class="button button-primary button-small" href="#pricing">Start free</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" role="switch" aria-checked="true" aria-label="Toggle dark mode">
+            <span class="toggle-thumb">
+              <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+              <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32 1.41 1.41M2 12h2m16 0h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+              </svg>
+            </span>
+          </button>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ============ HERO (Hero45 layout) ============ -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-top" data-reveal>
+            <span class="badge"><i class="pulse-dot"></i>AI PHONE SAFETY NET — FOR SERVICE BUSINESSES</span>
+            <h1>
+              Every missed call is a customer
+              <span class="gradient-text">calling your competitor.</span>
+            </h1>
+            <p class="hero-lede">
+              Paula answers when your team cannot — qualifies the caller, books or routes the next
+              step, and follows up by text. Your human touch stays intact. The leaks do not.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#pricing" data-ripple>Start your 30-day free trial</a>
+              <a class="button button-glass" href="#meet-paula" data-ripple>Meet Paula</a>
+            </div>
+            <p class="hero-note">No setup fee · <b>$299/month</b> after the trial · Cancel before day 30 and pay nothing</p>
+          </div>
+
+          <div class="hero-media" data-reveal data-reveal-delay="1">
+            <div class="dot-grid dot-grid-left" aria-hidden="true"></div>
+            <div class="dot-grid dot-grid-right" aria-hidden="true"></div>
+            <div class="hero-panel glass-card" role="img" aria-label="Example flow: missed call answered, SMS follow-up sent, CRM opportunity created">
+              <article class="call-card">
+                <header class="call-card-head">
+                  <span class="mono-label">MISSED CALL · 7:42 PM</span>
+                  <span class="live-chip"><i></i>LIVE</span>
+                </header>
+                <ol class="call-log">
+                  <li class="is-done">
+                    <span class="log-time">7:42:04</span>
+                    <div><strong>Paula answered</strong><small>in two rings</small></div>
+                    <b>✓</b>
+                  </li>
+                  <li class="is-done">
+                    <span class="log-time">7:43:11</span>
+                    <div><strong>Need qualified</strong><small>urgent roof leak</small></div>
+                    <b>✓</b>
+                  </li>
+                  <li class="is-active">
+                    <span class="log-time">7:44:02</span>
+                    <div><strong>Callback secured</strong><small>tomorrow · 8:30 AM</small></div>
+                    <b>→</b>
+                  </li>
+                </ol>
+              </article>
+              <div class="flow-connector" aria-hidden="true"><i></i></div>
+              <div class="panel-stack">
+                <aside class="sms-bubble">
+                  <span class="mono-label">PAULA · SMS FOLLOW-UP</span>
+                  <p>“I’ve flagged this as priority. The team will call at 8:30 AM.”</p>
+                </aside>
+                <div class="flow-connector flow-vertical" aria-hidden="true"><i></i></div>
+                <div class="pipeline-card">
+                  <span class="mono-label">CRM · PIPELINE</span>
+                  <div class="pipeline-row">
+                    <div><strong>New opportunity created</strong><small>Lead summary + contact attached</small></div>
+                    <b>✓</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-features">
+              <div class="hero-feature">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                  </svg>
+                </span>
+                <h3>Answers around the clock</h3>
+                <p>Voice AI picks up directly or activates when a call is missed, busy, failed, or after hours.</p>
+              </div>
+              <span class="feature-divider" aria-hidden="true"></span>
+              <div class="hero-feature">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                  </svg>
+                </span>
+                <h3>Qualifies by voice + SMS</h3>
+                <p>Captures the caller’s name, need, urgency, and best callback number in a natural conversation.</p>
+              </div>
+              <span class="feature-divider" aria-hidden="true"></span>
+              <div class="hero-feature">
+                <span class="feature-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </span>
+                <h3>Hands off to your team</h3>
+                <p>Live transfer or callback, with a concise lead summary pushed straight to your pipeline.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ LOSS TICKER ============ -->
+      <div class="loss-ticker" aria-label="Missed call consequences">
+        <div class="ticker-track" aria-hidden="false">
+          <p>
+            <span>Phone rings</span><i>→</i><span>Nobody answers</span><i>→</i>
+            <span>Caller tries the next company</span><i>→</i><span class="loss-final">Revenue disappears quietly</span><i>→</i>
+          </p>
+          <p aria-hidden="true">
+            <span>Phone rings</span><i>→</i><span>Nobody answers</span><i>→</i>
+            <span>Caller tries the next company</span><i>→</i><span class="loss-final">Revenue disappears quietly</span><i>→</i>
+          </p>
+        </div>
+      </div>
+
+      <!-- ============ CALCULATOR ============ -->
+      <section class="section" id="calculator">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>01 / MAKE THE LEAK VISIBLE</p>
+          <div class="calculator-grid">
+            <div class="calculator-copy" data-reveal>
+              <h2>What could unanswered calls be <span class="gradient-text">costing you?</span></h2>
+              <p>
+                Use your own numbers. The calculator shows potential monthly revenue at risk — not a
+                promise of what Paula will recover.
+              </p>
+              <div class="calc-form" id="roi-calculator">
+                <div class="calc-field">
+                  <div class="calc-head">
+                    <span class="mono-label">MISSED CALLS EACH DAY</span>
+                    <output id="missed-calls-out" for="missed-calls">3</output>
+                  </div>
+                  <input id="missed-calls" class="slider" type="range" min="0" max="30" step="1" value="3" aria-label="Missed calls each day" />
+                </div>
+                <div class="calc-field">
+                  <div class="calc-head">
+                    <span class="mono-label">CLOSE RATE FROM PHONE LEADS</span>
+                    <output id="close-rate-out" for="close-rate">30%</output>
+                  </div>
+                  <input id="close-rate" class="slider" type="range" min="0" max="100" step="1" value="30" aria-label="Close rate from phone leads, percent" />
+                </div>
+                <div class="calc-field">
+                  <div class="calc-head">
+                    <span class="mono-label">AVERAGE SALE</span>
+                    <output id="average-sale-out" for="average-sale">$1,000</output>
+                  </div>
+                  <input id="average-sale" class="slider" type="range" min="100" max="25000" step="100" value="1000" aria-label="Average sale in dollars" />
+                </div>
+              </div>
+            </div>
+            <aside class="result-card glass-card" aria-live="polite" data-reveal data-reveal-delay="1">
+              <span class="mono-label">POTENTIAL MONTHLY REVENUE AT RISK</span>
+              <strong id="monthly-loss" class="gradient-text">$27,000</strong>
+              <span class="mono-label result-detail" id="loss-detail">90 missed calls × 30% × $1,000</span>
+              <hr />
+              <p class="result-copy">
+                Paula is designed to respond to all <b id="monthly-calls">90</b> of those missed
+                opportunities, then give your team the context to follow through.
+              </p>
+              <small>Estimate only. Actual results depend on call volume, lead quality, follow-up, pricing, and close rate.</small>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ MEET PAULA (interactive) ============ -->
+      <section class="section" id="meet-paula">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>02 / SAY HELLO</p>
+          <div class="meet-card glass-card" data-reveal>
+            <svg
+              class="spotlight"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 3787 2842"
+              fill="none"
+            >
+              <g filter="url(#spotlight-blur)">
+                <ellipse
+                  cx="1924.71"
+                  cy="273.501"
+                  rx="1924.71"
+                  ry="273.501"
+                  transform="matrix(-0.822377 -0.568943 -0.568943 0.822377 3631.88 2291.09)"
+                  fill="#34c0a4"
+                  fill-opacity="0.21"
+                ></ellipse>
+              </g>
+              <defs>
+                <filter
+                  id="spotlight-blur"
+                  x="0.860352"
+                  y="0.838989"
+                  width="3785.16"
+                  height="2840.26"
+                  filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB"
+                >
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                  <feGaussianBlur stdDeviation="151" result="effect1_foregroundBlur"></feGaussianBlur>
+                </filter>
+              </defs>
+            </svg>
+            <div class="meet-copy">
+              <p class="mono-label meet-kicker"><span class="pulse-dot"></span> INTERACTIVE<span class="cursor-hint"> · MOVE YOUR CURSOR</span></p>
+              <h2>Meet <span class="gradient-text">Paula.</span></h2>
+              <p>
+                Always awake, never annoyed, ready on the second ring. This is the agent that picks
+                up when your front desk is at lunch, on the other line, or home for the night.
+              </p>
+              <div class="meet-actions">
+                <a class="button button-primary" href="#pricing" data-ripple>Put her on your phones</a>
+                <a class="text-link" href="#how-it-works">See how she works</a>
+              </div>
+            </div>
+            <div class="meet-scene" aria-label="Video of Paula speaking. The card tilts toward your cursor.">
+              <div class="portrait-tilt">
+                <figure class="portrait-card">
+                  <video autoplay muted loop playsinline preload="metadata" poster="assets/paula-portrait.jpg" aria-label="Paula, your AI receptionist, speaking">
+                    <source src="assets/paula-vsl.mp4" type="video/mp4" />
+                  </video>
+                  <span class="portrait-glare" aria-hidden="true"></span>
+                </figure>
+              </div>
+              <div class="scene-chip chip-status"><i></i>LIVE · ANSWERING</div>
+              <div class="scene-chip chip-booking">Booked — tomorrow 8:30 AM <b>✓</b></div>
+              <button class="sound-toggle" type="button" aria-pressed="false">
+                <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                  <line x1="23" y1="9" x2="17" y2="15" />
+                  <line x1="17" y1="9" x2="23" y2="15" />
+                </svg>
+                <svg class="icon-sound" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" />
+                </svg>
+                <span class="sound-label">Unmute</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ HUMAN TOUCH ============ -->
+      <section class="section human-section">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>03 / KEEP THE HUMAN TOUCH</p>
+          <div class="human-grid">
+            <div class="human-visual" aria-hidden="true" data-reveal>
+              <div class="orbit-stage" data-orbit>
+                <div class="orbit-glow"></div>
+                <div class="orbit orbit-outer">
+                  <span class="orbit-node node-one"><i></i>Voice</span>
+                  <span class="orbit-node node-two"><i></i>SMS</span>
+                  <span class="orbit-node node-three"><i></i>Human</span>
+                  <span class="orbit-node node-four"><i></i>CRM</span>
+                </div>
+                <div class="orbit orbit-inner"></div>
+                <div class="orbit-center">
+                  <img src="assets/paula-mark.svg?v=4" alt="" width="56" height="56" />
+                </div>
+              </div>
+            </div>
+            <div class="human-copy" data-reveal data-reveal-delay="1">
+              <h2>Paula does not have to <span class="gradient-text">replace</span> your receptionist.</h2>
+              <p class="large-copy">
+                She catches what falls through: calls during lunch, calls while the line is busy,
+                calls at 7:42 PM, and calls your team simply cannot reach in time.
+              </p>
+              <blockquote>
+                Use AI as the safety net. Let your people remain the relationship.
+              </blockquote>
+              <ul class="check-list">
+                <li>Your team controls when calls transfer to a person.</li>
+                <li>Paula can identify herself honestly if a caller asks.</li>
+                <li>Scripts, hours, tone, and escalation rules are built around your business.</li>
+                <li>Every handoff includes context, so your human follow-up feels prepared.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESS (Evervault hover cards) ============ -->
+      <section class="section" id="how-it-works">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>04 / THE RECOVERY PATH</p>
+          <div class="section-heading" data-reveal>
+            <h2>From unanswered ring to <span class="gradient-text">ready-to-call</span> opportunity.</h2>
+            <p>One coordinated system covers the phone call, the text conversation, and the team handoff. Hover a step to peek under the hood.</p>
+          </div>
+          <ol class="process-grid">
+            <li class="process-card glass-card" data-evervault data-reveal>
+              <div class="ev-pattern" aria-hidden="true">
+                <div class="ev-gradient"></div>
+                <p class="ev-chars"></p>
+              </div>
+              <div class="process-body">
+                <span class="process-number mono-label">01</span>
+                <h3>Answer or recover</h3>
+                <p>Voice AI answers directly or activates when a call is missed, busy, failed, or outside business hours.</p>
+              </div>
+            </li>
+            <li class="process-card glass-card" data-evervault data-reveal data-reveal-delay="1">
+              <div class="ev-pattern" aria-hidden="true">
+                <div class="ev-gradient"></div>
+                <p class="ev-chars"></p>
+              </div>
+              <div class="process-body">
+                <span class="process-number mono-label">02</span>
+                <h3>Qualify naturally</h3>
+                <p>Paula captures the caller’s name, need, urgency, and best callback number by voice or conversational SMS.</p>
+              </div>
+            </li>
+            <li class="process-card glass-card" data-evervault data-reveal data-reveal-delay="2">
+              <div class="ev-pattern" aria-hidden="true">
+                <div class="ev-gradient"></div>
+                <p class="ev-chars"></p>
+              </div>
+              <div class="process-body">
+                <span class="process-number mono-label">03</span>
+                <h3>Route the next step</h3>
+                <p>Transfer live, secure a callback, create an opportunity, and alert the right person with a concise summary.</p>
+              </div>
+            </li>
+            <li class="process-card glass-card" data-evervault data-reveal data-reveal-delay="3">
+              <div class="ev-pattern" aria-hidden="true">
+                <div class="ev-gradient"></div>
+                <p class="ev-chars"></p>
+              </div>
+              <div class="process-body">
+                <span class="process-number mono-label">04</span>
+                <h3>Improve every month</h3>
+                <p>Request custom workflow, script, routing, or knowledge-base updates as the business changes.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ============ OFFER / VALUE LEDGER ============ -->
+      <section class="section" id="offer">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>05 / DONE FOR YOU</p>
+          <div class="offer-grid">
+            <div class="offer-intro" data-reveal>
+              <h2>A complete phone recovery system, <span class="gradient-text">not another login</span> to manage.</h2>
+              <p>
+                The launch work is included. We configure the agents, workflows, routing, prompts,
+                pipeline steps, and QA so your team can focus on the opportunities that arrive.
+              </p>
+              <div class="operator-card glass-card">
+                <span class="mono-label">BUILT BY</span>
+                <strong>Paul Ekpo</strong>
+                <p>GoHighLevel specialist · 4+ years on Upwork · Marketing automation</p>
+              </div>
+            </div>
+            <aside class="ledger-card glass-card" data-reveal data-reveal-delay="1">
+              <header class="ledger-head">
+                <div>
+                  <span class="mono-label">INCLUDED AT LAUNCH</span>
+                  <h3>Your Paula system</h3>
+                </div>
+                <span class="ledger-badge">DFY</span>
+              </header>
+              <ul class="ledger-list">
+                <li><span>Voice AI IVR + live routing setup</span><i></i><b>$1,250</b></li>
+                <li><span>Missed-call SMS recapture system</span><i></i><b>$1,000</b></li>
+                <li><span>Conversational SMS qualifier + handoff</span><i></i><b>$900</b></li>
+                <li><span>CRM pipeline, alerts + contact enrichment</span><i></i><b>$600</b></li>
+                <li><span>Launch QA + 30-day optimization</span><i></i><b>$500</b></li>
+                <li><span>Monthly custom upgrade consultation</span><i></i><b>$50</b></li>
+                <li><span>11-page AI phone system build guide</span><i></i><b>$200</b></li>
+              </ul>
+              <div class="ledger-total">
+                <span>Estimated first-month standalone value</span>
+                <strong><s>$4,500</s> <b class="gradient-text">$299/mo</b></strong>
+              </div>
+              <p class="fine-print">
+                Values are estimates based on the implementation scope and a $50/hour consultation
+                baseline. They are not a claim about universal market pricing.
+              </p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRICING (glassy) ============ -->
+      <section class="section pricing-section" id="pricing">
+        <canvas class="pricing-shader" aria-hidden="true"></canvas>
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>06 / PROVE IT ON YOUR CALLS</p>
+          <div class="section-heading centered" data-reveal>
+            <h2>Run Paula for 30 days <span class="gradient-text">before you pay us.</span></h2>
+            <p>
+              We build the system around your hours, services, routing, and follow-up. You test it in
+              the real world. If it earns a permanent place in your operation, keep it.
+            </p>
+          </div>
+          <div class="pricing-cards">
+            <article class="price-card glass-card" data-reveal>
+              <h3 class="plan-name">30-day free trial</h3>
+              <p class="plan-desc">Full done-for-you build, tested on your real calls.</p>
+              <div class="price-row"><strong>$0</strong><span>today</span></div>
+              <div class="card-divider" aria-hidden="true"></div>
+              <ul class="plan-features">
+                <li>Map the leak — call flow, hours, services, handoff rules</li>
+                <li>Build and test — configuration, QA, customer-experience tuning</li>
+                <li>Measure for 30 days — conversations, qualified leads, handoffs</li>
+                <li>Cancel before day 30 and pay $0 to us</li>
+              </ul>
+              <a
+                class="button button-glass button-full"
+                href="mailto:paul.ekpo9@gmail.com?subject=Paula%2030-Day%20Trial&body=Hi%20Paul%2C%20I%27d%20like%20to%20start%20a%2030-day%20Paula%20trial%20for%20my%20business."
+                data-ripple
+              >
+                Start your 30-day trial
+              </a>
+            </article>
+            <article class="price-card glass-card is-popular" data-reveal data-reveal-delay="1">
+              <span class="popular-badge">MOST POPULAR</span>
+              <h3 class="plan-name">Paula</h3>
+              <p class="plan-desc">Keep the system after your trial proves it.</p>
+              <div class="price-row"><strong>$299</strong><span>/month</span></div>
+              <div class="card-divider" aria-hidden="true"></div>
+              <ul class="plan-features">
+                <li>Done-for-you implementation included</li>
+                <li>Voice AI + SMS recapture + CRM handoff</li>
+                <li>Monthly requested custom updates</li>
+                <li>About 93% below the estimated first-month standalone value</li>
+              </ul>
+              <a
+                class="button button-primary button-full"
+                href="mailto:paul.ekpo9@gmail.com?subject=Paula%2030-Day%20Trial&body=Hi%20Paul%2C%20I%27d%20like%20to%20discuss%20a%2030-day%20Paula%20trial%20for%20my%20business."
+                data-ripple
+              >
+                Request your free build call
+              </a>
+            </article>
+            <article class="price-card glass-card" data-reveal data-reveal-delay="2">
+              <h3 class="plan-name">Live build</h3>
+              <p class="plan-desc">Schedule a consultation and build this live with you.</p>
+              <div class="price-row"><strong>$35–50</strong><span>/hr</span></div>
+              <div class="card-divider" aria-hidden="true"></div>
+              <ul class="plan-features">
+                <li>Screen-share session — watch the system come together</li>
+                <li>Your GoHighLevel account, your branding, your rules</li>
+                <li>Ask anything as we go; leave with a working setup</li>
+                <li>Book directly through Upwork — verified work history</li>
+              </ul>
+              <a
+                class="button button-glass button-full"
+                href="https://www.upwork.com/freelancers/~01366accc3b78aaab4"
+                target="_blank"
+                rel="noreferrer"
+                data-ripple
+              >
+                See availability
+              </a>
+            </article>
+          </div>
+          <p class="pricing-note" data-reveal>
+            GoHighLevel, phone, SMS, and AI usage are separate. The SOP’s low-volume example is about
+            $11/month; actual provider costs vary with volume and configuration.
+          </p>
+        </div>
+      </section>
+
+      <!-- ============ FREE GUIDE ============ -->
+      <section class="section" id="free-guide">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>07 / YOU MADE IT TO THE FREE BUILD GUIDE</p>
+          <div class="guide-card glass-card" data-reveal>
+            <div class="guide-cover" aria-hidden="true">
+              <span class="mono-label">GOHIGHLEVEL</span>
+              <strong>AI PHONE<br />SYSTEM</strong>
+              <p>MASTER SOP</p>
+              <div>VOICE AI IVR + MISSED CALL AGENT</div>
+            </div>
+            <div class="guide-copy">
+              <h2>Want to see exactly <span class="gradient-text">how the system is built?</span></h2>
+              <p>
+                Download the 11-page implementation SOP covering the Voice AI IVR, business-hours
+                routing, five-workflow missed-call SMS sequence, prompts, QA, and troubleshooting.
+              </p>
+              <ul class="guide-meta">
+                <li>4 HOURS OF BUILD DOCUMENTATION</li>
+                <li>$200 REFERENCE VALUE</li>
+                <li>NO CODE REQUIRED</li>
+              </ul>
+              <a
+                class="button button-primary"
+                href="downloads/ghl-ai-phone-system-master-sop.pdf"
+                download="GHL-AI-Phone-System-Master-SOP.pdf"
+                data-ripple
+              >
+                Download the free SOP
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section" id="faq">
+        <div class="container">
+          <p class="section-index mono-label" data-reveal>08 / STRAIGHT ANSWERS</p>
+          <div class="faq-grid">
+            <div class="faq-intro" data-reveal>
+              <h2>Before Paula answers <span class="gradient-text">your first call.</span></h2>
+              <p>Still deciding? These are the concerns that matter most in a real implementation.</p>
+            </div>
+            <div class="faq-list" data-reveal data-reveal-delay="1">
+              <details open>
+                <summary>Will an AI voice hurt our personal reputation?<i></i></summary>
+                <p>
+                  It should not be deployed carelessly. Paula is configured around your brand tone,
+                  business facts, escalation rules, and human handoff. Many businesses use her only
+                  for overflow and after-hours coverage so the human team remains the main experience.
+                </p>
+              </details>
+              <details>
+                <summary>Do I have to replace my receptionist?<i></i></summary>
+                <p>No. Paula can serve strictly as backup for missed, busy, and after-hours calls.</p>
+              </details>
+              <details>
+                <summary>What happens when someone misses us?<i></i></summary>
+                <p>
+                  The workflow can send an immediate SMS, capture name and need, assess urgency,
+                  confirm the best number, create a CRM opportunity, and notify the right person.
+                </p>
+              </details>
+              <details>
+                <summary>Is the revenue calculator a guarantee?<i></i></summary>
+                <p>
+                  No. It is adjustable scenario math. Actual recovered revenue depends on call
+                  quality, service demand, pricing, team follow-up, and close rate.
+                </p>
+              </details>
+              <details>
+                <summary>What costs are not included in $299/month?<i></i></summary>
+                <p>
+                  Your GoHighLevel account and metered phone, SMS, and AI usage are separate. Cost
+                  varies by volume, carrier, country, model, and configuration.
+                </p>
+              </details>
+              <details>
+                <summary>What can be changed after launch?<i></i></summary>
+                <p>
+                  Request updates to routing, opening hours, prompts, FAQs, services, qualification,
+                  notifications, CRM steps, and follow-up sequences. Extra consultation is available
+                  at $35–50/hour.
+                </p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ FINAL CTA ============ -->
+      <section class="final-cta">
+        <div class="container final-cta-inner" data-reveal>
+          <span class="badge"><i class="pulse-dot"></i>YOUR NEXT MISSED CALL WILL NOT WAIT</span>
+          <h2>Give every caller a <span class="gradient-text">clear next step.</span></h2>
+          <p>Start with a free system-mapping conversation. No hard sell, no invented revenue promises.</p>
+          <div class="final-actions">
+            <a
+              class="button button-primary"
+              href="mailto:paul.ekpo9@gmail.com?subject=Paula%20System%20Mapping&body=Hi%20Paul%2C%20I%27d%20like%20to%20map%20a%20Paula%20AI%20phone%20system%20for%20my%20business."
+              data-ripple
+            >
+              Map my phone safety net
+            </a>
+            <a class="text-link" href="mailto:paul.ekpo9@gmail.com">paul.ekpo9@gmail.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <a class="brand brand-footer" href="#top">
+          <img src="assets/paula-mark.svg?v=4" alt="" width="30" height="30" />
+          <span>Paula</span>
+        </a>
+        <p>AI phone safety nets for service businesses.</p>
+        <nav aria-label="Legal">
+          <a href="privacy.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+        </nav>
+        <p class="mono-label">© <span id="year">2026</span> PAULA BY PAUL EKPO</p>
+      </div>
+    </footer>
+  </body>
+</html>
